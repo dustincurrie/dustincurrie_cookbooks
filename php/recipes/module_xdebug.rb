@@ -25,6 +25,14 @@ pack = value_for_platform(
   "default" => "php5-xdebug"
 )
 
+template value_for_platform([ "centos", "redhat", "fedora", "suse" ] => {"default" => "/etc/xdebug.ini"}, "default" => "/etc/php5/apache2/conf.d/xdebug.ini") do
+  source "xdebug.ini.erb"
+  owner "root"
+  group "root"
+  mode 0644
+  notifies :restart, resources("service[apache2]"), :delayed
+end
+
 package pack do
   action :upgrade
 end

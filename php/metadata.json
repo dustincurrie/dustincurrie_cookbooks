@@ -58,7 +58,9 @@
       "php::module_fileinfo": "Install the php5-fileinfo package",
       "php::module_curl": "Install the php5-curl package",
       "php::pear": "Install the php-pear package",
-      "php::module_pgsql": "Install the php5-pgsql packag"
+      "php::module_pgsql": "Install the php5-pgsql package",
+      "php::module_xmlrpc": "Install the php5-xmlrpc package",
+      "php::module_xdebug": "Install the php5-xdebug package"
     },
     "conflicting": {
     }

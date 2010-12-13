@@ -24,7 +24,6 @@ include_recipe "php::module_ldap"
 include_recipe "php::module_memcache"
 include_recipe "php::module_gd"
 include_recipe "php::module_pgsql"
-include_recipe "php::module_xmlrpc"
 include_recipe "php::pear"
 
 
