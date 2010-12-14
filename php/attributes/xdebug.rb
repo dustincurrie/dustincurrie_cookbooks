@@ -1,4 +1,3 @@
-default[:zend_extension]            =  "/usr/lib/php5/20060613/xdebug.so"
 default[:xdebug][:remote_enable]    =  "On"
 default[:xdebug][:remote_handler]   =  "dbgp"
 default[:xdebug][:remote_mode]      =  "req"
